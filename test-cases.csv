@@ -1,0 +1,16 @@
+Test Case ID,Scenario,Steps,Expected Result,Status
+TC01,Login page loads,Open https://magnus.jalatechnologies.com/,Login page and title display,Not run in local browser
+TC02,Email and password fields,Open login page,Email/mobile and password inputs are available,Not run in local browser
+TC03,Valid login,Enter provided training credentials and submit,User reaches authenticated landing page,Requires authorized execution
+TC04,Invalid password,Enter training email and wrong password then submit,Login rejected and protected area not opened,Requires interactive execution
+TC05,Empty credentials,Submit with both fields blank,Required validation and no authentication,Requires interactive execution
+TC06,Email required,Leave email blank and enter password,Email validation appears and no authentication,Requires interactive execution
+TC07,Password required,Enter email and leave password blank,Password validation appears and no authentication,Requires interactive execution
+TC08,Malformed email,Enter malformed email and submit,Validation or safe rejection,Requires interactive execution
+TC09,Forgot password navigation,Click Forgot Password,Password recovery screen opens with email input,Page existence verified by public page inspection
+TC10,Remember Me,Toggle Remember Me,Control is usable and behavior follows documented requirements,Requires interactive execution
+TC11,Password masking,Type in password field,Typed password is masked,Requires interactive execution
+TC12,Admin login route,Open /Account/AdminLogin,Admin sign-in screen displays,Page existence verified by public page inspection
+TC13,Keyboard navigation,Tab through login controls and submit using keyboard,Controls have logical focus order and can be used by keyboard,Requires interactive execution
+TC14,Logout and session,Sign in then log out and revisit protected route,Logged-out user cannot access protected page,Requires authorized execution
+TC15,Responsive layout,Check login page at desktop and mobile viewport sizes,Controls remain readable and usable without overlap,Requires interactive execution
